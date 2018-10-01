@@ -32,7 +32,7 @@ function wait(ms) {
  
 // Set the date we're counting down to
  
-var countDownDate = new Date("Oct 01, 2018 16:00:00 EDT") <!--- 08:36:43 ---> <!---  05:3:43 --->
+var countDownDate = new Date("Oct 01, 2018 16:59:59 EDT") <!--- 08:36:43 ---> <!---  05:3:43 --->
  
 // Get todays date and time
 
@@ -71,7 +71,7 @@ var x = setInterval(function() {
     console.log(distance)
  
     if (distance < 0) {
-    document.getElementById("countdown").innerHTML = "The Cube Grows!";
+    document.getElementById("countdown").innerHTML = "RESTART YOUR GAME TO SEE THE RESULT!";
     }
     if (distance < -19000) {
     console.log("CUBE TIME")
@@ -93,8 +93,8 @@ var x = setInterval(function() {
       <div class="center-object">
         <section class="me">
           <h1 class="title" style="width: 100%;text-align: center">Cube Island Tracker</h1>
-	<div> Phase 2! <div id="countdown"></div>
-<div> The Cube grows right now when it's over the Countdown starts again! </div>
+        <div id="countdown"></div>
+<div> Phase (2) </div>
 		  
         </section>
         <div class="buttons">
